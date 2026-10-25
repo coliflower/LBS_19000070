@@ -105,55 +105,6 @@ Some error-handling adapted ($line = '';)
 Some logging adapted
 NEW, each home-appliance has his own output in 70er LBS.
 </li></ul>
-<ul><li>V.0.3.05, beta, 20200407:
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1280283-home-connect-2nd?p=1490475#post1490475" target="_blank"> HIER </a>
-Some bug ...
-</li></ul>
-<ul><li>V.0.3.04, beta, 20200405:
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1280283-home-connect-2nd?p=1489507#post1489507" target="_blank"> HIER </a>
-WICHTIG, new Redirect-URI need to be insert/adapted in DEVELOPER-portal to ... http://{Edomi-IP}/visu/hc/hc_code.php --> very important
-WICHTIG, Update der KLASSE somit auch notwendig - im Download-Anhang.
-Some bugs ...
-</li></ul>
-<ul><li>V.0.3.03, beta, 20200401:
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1280283-home-connect-2nd?p=1487829#post1487829" target="_blank"> HIER </a>
-New, SCOPE nicht mehr notwendig - somit wird ein Maximum freigegeben, entfernt im Authorize-URL
-New, Update der KLASSE somit auch notwendig - im Download-Anhang (WICHTIG).
-</li></ul>
-</li></ul>
-<ul><li>V.0.3.02, beta, 20181216:
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1280283-home-connect-2nd?p=1300925#post1300925" target="_blank"> HIER </a>
-Additional events CONNECTED and DISCONNECTED in case of appliance is e.g. plugged on/off
-</li></ul>
-<ul><li>V.0.3.01, beta, 20181212:
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1280283-home-connect-2nd?p=1300030#post1300030" target="_blank"> HIER </a>
-Some small corrections in HELP-file ...
-Additional trigger = 5 for "Reset" - be carefull and see description in chapter INPUTS below !!!
-Some update in the CLASS-file because of option "client_secret" (ZIP-file)
-</li></ul>
-<ul><li>V.0.3.00, beta, 20181202:
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1280283-home-connect-2nd?p=1295871#post1295871" target="_blank"> HIER </a>
-New, HC allows one SSE (EVENT-Server) for all appliances, now
-New, Some changes in CLASS-container (ZIP)
-New, redirect_uri changed from individual one to http://{edomi-IP}/visu/hc_code.php (please adapt your App in developer-portal first!)
-New, hc.php changed to hc_code.php - no need to store the file manually anymore. This will be done by this LBS, automatically
-New, OAuth2 CODE will be stored via hc_code.php in hc_code.json, automatically afterwards to a remanent-variable ... 
-New, edomi-version from hard-coded to custom-value (to test compatibility of new edomi-version)
-New, LBS-inputs, reduced from 15 to 5 and re-arranged ... see description and take attention
-New, LBS-outputs, reduced to 3 and re-arranged ... see description and take attention
-</li></ul>
-<ul><li>V.0.2.01, beta, 20181028:
-Bug in Array ([0] -> [$i]) ...</li></ul>
-<ul><li>V.0.2.00, beta, 20181022:
-Integration of access-data into SSE (no need of extra OAuth2-LBS, CLASS via autoload.php, integration of Client-secret, reduction of complexity) ...
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1280283-home-connect-2nd" target="_blank"> HIER </a>
-</li></ul>
-<ul><li>V.0.1.01, beta, 20180128:
-Missing index in error-log ...</li></ul>
-<ul><li>V.0.1.00, beta, 20180127:
-First release ...
-In Forum ab <a href="https://knx-user-forum.de/forum/projektforen/edomi/1187681-home-connect-lbs-19000070-1900071-19000072" target="_blank"> HIER </a>
-</li></ul>
 
 
 <h3 style="color:black;">Further Release Informationen</h3>
