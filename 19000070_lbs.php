@@ -502,7 +502,7 @@ if (isset($_GET['code']))		//	OK bis zum CODE speichern (10 Minuten Zeit für de
 		{
 			echo 'Header: '.$value."<br />\n";
 		}
-		unset($header, $key, $value‚);
+		unset($header, $key, $value);
 	}
 	echo "<br />\n";
 	echo 'Arg: Redirect-Url:	'.$url."<br />\n";
