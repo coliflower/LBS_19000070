@@ -693,10 +693,6 @@ if ($E=logic_getInputs($id))
 ///	$scope = HomeConnect\Common\HcScopes::$scopes['sse'][$contotype];
 ///
 ///
-///	https://api.home-connect.com/security/oauth/authorize?client_id=5ED927FD8AAE1319BCAA75DFC264ED5A26F19FBFCCDEAFCBE89C5CDE465AEB2D&redirect_uri=http://10.0.10.3/visu/hc_code.php&response_type=code&scope=IdentifyAppliance%20Dishwasher&state=homeconnect_auth
-///	https://api.home-connect.com/security/oauth/token?client_id=5ED927FD8AAE1319BCAA75DFC264ED5A26F19FBFCCDEAFCBE89C5CDE465AEB2D&client_secret=9E4052745168B5127460609582B80650BB580D4292A252EFB5EB049A80E5B6EA&redirect_uri=http://10.0.10.3/visu/hc_code.php&grant_type=authorization_code&code=eyJ4LXJlZyI6IkVVIiwieC1lbnYiOiJQUkQiLCJ0b2tlbiI6IjY5MTk5YmNiLTA5NTktNGI0NS04MzFkLTMxNGEzMjQ4OTVjMyJ9
-///	client_id		5ED927FD8AAE1319BCAA75DFC264ED5A26F19FBFCCDEAFCBE89C5CDE465AEB2D
-///	client_secret	9E4052745168B5127460609582B80650BB580D4292A252EFB5EB049A80E5B6EA
 ///
 ///
 ///		Zum Testen, nicht vergessen zu löschen ... !!!
@@ -1039,12 +1035,6 @@ if ($E=logic_getInputs($id))
 ///
 ///						$tokens ...
 ///						a:6:{
-///						s:8:"id_token";s:2171:"eyJ4LWVudiI6IlBSRCIsImFsZyI6IlJTMjU2IiwieC1yZWciOiJFVSIsImtpZCI6IlMxIn0.eyJmZ3JwIjpbXSwic3ViIjoiZjQzNjFiMWYtMWE4MS00ZDdjLWI2NDYtM2FhNTM5ZjhlOTcxIiwiYXVkIjoiNUVEOTI3RkQ4QUFFMTMxOUJDQUE3NURGQzI2NEVENUEyNkYxOUZCRkNDREVBRkNCRTg5QzVDREU0NjVBRUIyRCIsImF6cCI6IjVFRDkyN0ZEOEFBRTEzMTlCQ0FBNzVERkMyNjRFRDVBMjZGMTlGQkZDQ0RFQUZDQkU4OUM1Q0RFNDY1QUVCMkQiLCJzY29wZSI6WyJDb29rUHJvY2Vzc29yLU1vbml0b3IiLCJEcnllci1TZXR0aW5ncyIsIldhc2hlci1Db250cm9sIiwiRHJ5ZXItTW9uaXRvciIsIlNldHRpbmdzIiwiSWRlbnRpZnlBcHBsaWFuY2UiLCJDbGVhbmluZ1JvYm90IiwiV2FzaGVyLVNldHRpbmdzIiwiQ29mZmVlTWFrZXIiLCJXYXNoZXIiLCJDb29rUHJvY2Vzc29yLVNldHRpbmdzIiwiSG9iLVNldHRpbmdzIiwiT3Zlbi1Nb25pdG9yIiwiSG9vZC1Db250cm9sIiwiV2FzaGVyRHJ5ZXItTW9uaXRvciIsIk92ZW4tU2V0dGluZ3MiLCJDb2ZmZWVNYWtlci1Nb25pdG9yIiwiTW9uaXRvciIsIkhvYi1Nb25pdG9yIiwiV2FzaGVyRHJ5ZXItQ29udHJvbCIsIkRpc2h3YXNoZXItQ29udHJvbCIsIlJlZnJpZ2VyYXRvci1Db250cm9sIiwiRGlzaHdhc2hlciIsIkRyeWVyLUNvbnRyb2wiLCJDbGVhbmluZ1JvYm90LUNvbnRyb2wiLCJXaW5lQ29vbGVyIiwiRnJlZXplci1Nb25pdG9yIiwiV2FzaGVyRHJ5ZXIiLCJSZWZyaWdlcmF0b3ItTW9uaXRvciIsIkNvb2tQcm9jZXNzb3IiLCJGcmVlemVyIiwiRnJlZXplci1TZXR0aW5ncyIsIldpbmVDb29sZXItQ29udHJvbCIsIldpbmVDb29sZXItU2V0dGluZ3MiLCJEaXNod2FzaGVyLVNldHRpbmdzIiwiTW9uaXRvckFwcGxpYW5jZSIsIkhvb2QiLCJEcnllciIsIkZyaWRnZUZyZWV6ZXItTW9uaXRvciIsIkNsZWFuaW5nUm9ib3QtU2V0dGluZ3MiLCJSZWZyaWdlcmF0b3IiLCJSZWZyaWdlcmF0b3ItU2V0dGluZ3MiLCJEaXNod2FzaGVyLU1vbml0b3IiLCJDb2ZmZWVNYWtlci1TZXR0aW5ncyIsIkZyaWRnZUZyZWV6ZXItU2V0dGluZ3MiLCJDbGVhbmluZ1JvYm90LU1vbml0b3IiLCJXaW5lQ29vbGVyLU1vbml0b3IiLCJGcmVlemVyLUNvbnRyb2wiLCJDb2ZmZWVNYWtlci1Db250cm9sIiwiV2FzaGVyLU1vbml0b3IiLCJIb29kLU1vbml0b3IiLCJIb29kLVNldHRpbmdzIiwiRnJpZGdlRnJlZXplci1Db250cm9sIiwiQ29va1Byb2Nlc3Nvci1Db250cm9sIiwiV2FzaGVyRHJ5ZXItU2V0dGluZ3MiXSwiaXNzIjoiRVU6UFJEOjA0IiwiZXhwIjoxNTg2MTgyMjE4LCJpYXQiOjE1ODYwOTU4MTgsImp0aSI6IjZmZDA0ODQyLTcxMGItNGE4ZC1iZjdkLTI0M2I4M2QxZGNkMyJ9.M94oYagR3RwYEH06rh0FhxVMyg1ipNBDoqfnTy5etvPVyveyg-BDW-E3qyZz1qlueH7Mb-R-bKghUQF_onETezr6QCSs695JgpGbhhBIshypMQ35h1sFYcN6GQSbOx3kmdmdc_G55YIii6HUm0J5ineXwQ3xSw7j8RqC84lGGgHEMhd_6PYFLm4oCHAlpd5o0_wwxfWecPrfwtzZyT3ksOOs0u82JQgckACcD2QnDXyeR_KN6sSOKOyhwkvSdJgF_DQLvD0uHthYTPjJx0cciNvLIGTrSsDST6wP6fzZZysUvAlvyzP55SkLw5IInWnJVaFUrW-G4ulMLwZ7HosNag";
-///						s:12:"access_token";s:2171:"eyJ4LWVudiI6IlBSRCIsImFsZyI6IlJTMjU2IiwieC1yZWciOiJFVSIsImtpZCI6IlMxIn0.eyJmZ3JwIjpbXSwic3ViIjoiZjQzNjFiMWYtMWE4MS00ZDdjLWI2NDYtM2FhNTM5ZjhlOTcxIiwiYXVkIjoiNUVEOTI3RkQ4QUFFMTMxOUJDQUE3NURGQzI2NEVENUEyNkYxOUZCRkNDREVBRkNCRTg5QzVDREU0NjVBRUIyRCIsImF6cCI6IjVFRDkyN0ZEOEFBRTEzMTlCQ0FBNzVERkMyNjRFRDVBMjZGMTlGQkZDQ0RFQUZDQkU4OUM1Q0RFNDY1QUVCMkQiLCJzY29wZSI6WyJDb29rUHJvY2Vzc29yLU1vbml0b3IiLCJEcnllci1TZXR0aW5ncyIsIldhc2hlci1Db250cm9sIiwiRHJ5ZXItTW9uaXRvciIsIlNldHRpbmdzIiwiSWRlbnRpZnlBcHBsaWFuY2UiLCJDbGVhbmluZ1JvYm90IiwiV2FzaGVyLVNldHRpbmdzIiwiQ29mZmVlTWFrZXIiLCJXYXNoZXIiLCJDb29rUHJvY2Vzc29yLVNldHRpbmdzIiwiSG9iLVNldHRpbmdzIiwiT3Zlbi1Nb25pdG9yIiwiSG9vZC1Db250cm9sIiwiV2FzaGVyRHJ5ZXItTW9uaXRvciIsIk92ZW4tU2V0dGluZ3MiLCJDb2ZmZWVNYWtlci1Nb25pdG9yIiwiTW9uaXRvciIsIkhvYi1Nb25pdG9yIiwiV2FzaGVyRHJ5ZXItQ29udHJvbCIsIkRpc2h3YXNoZXItQ29udHJvbCIsIlJlZnJpZ2VyYXRvci1Db250cm9sIiwiRGlzaHdhc2hlciIsIkRyeWVyLUNvbnRyb2wiLCJDbGVhbmluZ1JvYm90LUNvbnRyb2wiLCJXaW5lQ29vbGVyIiwiRnJlZXplci1Nb25pdG9yIiwiV2FzaGVyRHJ5ZXIiLCJSZWZyaWdlcmF0b3ItTW9uaXRvciIsIkNvb2tQcm9jZXNzb3IiLCJGcmVlemVyIiwiRnJlZXplci1TZXR0aW5ncyIsIldpbmVDb29sZXItQ29udHJvbCIsIldpbmVDb29sZXItU2V0dGluZ3MiLCJEaXNod2FzaGVyLVNldHRpbmdzIiwiTW9uaXRvckFwcGxpYW5jZSIsIkhvb2QiLCJEcnllciIsIkZyaWRnZUZyZWV6ZXItTW9uaXRvciIsIkNsZWFuaW5nUm9ib3QtU2V0dGluZ3MiLCJSZWZyaWdlcmF0b3IiLCJSZWZyaWdlcmF0b3ItU2V0dGluZ3MiLCJEaXNod2FzaGVyLU1vbml0b3IiLCJDb2ZmZWVNYWtlci1TZXR0aW5ncyIsIkZyaWRnZUZyZWV6ZXItU2V0dGluZ3MiLCJDbGVhbmluZ1JvYm90LU1vbml0b3IiLCJXaW5lQ29vbGVyLU1vbml0b3IiLCJGcmVlemVyLUNvbnRyb2wiLCJDb2ZmZWVNYWtlci1Db250cm9sIiwiV2FzaGVyLU1vbml0b3IiLCJIb29kLU1vbml0b3IiLCJIb29kLVNldHRpbmdzIiwiRnJpZGdlRnJlZXplci1Db250cm9sIiwiQ29va1Byb2Nlc3Nvci1Db250cm9sIiwiV2FzaGVyRHJ5ZXItU2V0dGluZ3MiXSwiaXNzIjoiRVU6UFJEOjA0IiwiZXhwIjoxNTg2MTgyMjE4LCJpYXQiOjE1ODYwOTU4MTgsImp0aSI6IjZmZDA0ODQyLTcxMGItNGE4ZC1iZjdkLTI0M2I4M2QxZGNkMyJ9.M94oYagR3RwYEH06rh0FhxVMyg1ipNBDoqfnTy5etvPVyveyg-BDW-E3qyZz1qlueH7Mb-R-bKghUQF_onETezr6QCSs695JgpGbhhBIshypMQ35h1sFYcN6GQSbOx3kmdmdc_G55YIii6HUm0J5ineXwQ3xSw7j8RqC84lGGgHEMhd_6PYFLm4oCHAlpd5o0_wwxfWecPrfwtzZyT3ksOOs0u82JQgckACcD2QnDXyeR_KN6sSOKOyhwkvSdJgF_DQLvD0uHthYTPjJx0cciNvLIGTrSsDST6wP6fzZZysUvAlvyzP55SkLw5IInWnJVaFUrW-G4ulMLwZ7HosNag";
-///						s:10:"expires_in";i:86400;
-///						s:5:"scope";s:897:"CookProcessor-Monitor Dryer-Settings Washer-Control Dryer-Monitor Settings IdentifyAppliance CleaningRobot Washer-Settings CoffeeMaker Washer CookProcessor-Settings Hob-Settings Oven-Monitor Hood-Control WasherDryer-Monitor Oven-Settings CoffeeMaker-Monitor Monitor Hob-Monitor WasherDryer-Control Dishwasher-Control Refrigerator-Control Dishwasher Dryer-Control CleaningRobot-Control WineCooler Freezer-Monitor WasherDryer Refrigerator-Monitor CookProcessor Freezer Freezer-Settings WineCooler-Control WineCooler-Settings Dishwasher-Settings MonitorAppliance Hood Dryer FridgeFreezer-Monitor CleaningRobot-Settings Refrigerator Refrigerator-Settings Dishwasher-Monitor CoffeeMaker-Settings FridgeFreezer-Settings CleaningRobot-Monitor WineCooler-Monitor Freezer-Control CoffeeMaker-Control Washer-Monitor Hood-Monitor Hood-Settings FridgeFreezer-Control CookProcessor-Control WasherDryer-Settings";
-///						s:13:"refresh_token";s:100:"eyJ4LXJlZyI6IkVVIiwieC1lbnYiOiJQUkQiLCJ0b2tlbiI6ImFkMGVlZmQ3LTlmYjgtNDhlZi05NjkwLWQ1OTEzYzg5Yjk5ZSJ9";
-///						s:10:"token_type";s:6:"Bearer";
 ///						}
 ///
 						if (isset($tokens))
@@ -1121,7 +1111,12 @@ if ($E=logic_getInputs($id))
 ///
 							if (isset($decode['error']['key']))
 							{
-								$http_code = $decode['error']['key'];
+								$http_error_key = $decode['error']['key'];
+								$http_code = $http_error_key;
+								if (preg_match('/(?:^|\.)([0-9]{3})(?:\.|$)/', $http_error_key, $http_code_match))
+								{
+									$http_code = (int)$http_code_match[1];
+								}
 								$http_code_description = $decode['error']['description'];
 								logic_setOutput($id, 5, $http_code);
 								LB_LBSID_DEBUG($id, $remark.' http ERROR ................... '.$http_code, 3, $log, $ll, false);
@@ -1138,10 +1133,10 @@ if ($E=logic_getInputs($id))
 								}
 								if ($http_code == 429)
 								{
-									if (preg_match('/ period of ([0-9]*) seconds/', $http_code_description, $time))
+									if (preg_match('/ period of ([0-9]+) seconds/', $http_code_description, $time))
 									{
-										LB_LBSID_DEBUG($id, $remark.' http ERROR (429) ............. '.$time.' seconds HC-ACCOUNT is blocked, afterwards LBS should continue automaticaly', 3, $log, $ll, false);
-										usleep(1000*1000*$time + 1000*1000*15);
+										LB_LBSID_DEBUG($id, $remark.' http ERROR (429) ............. '.$time[1].' seconds HC-ACCOUNT is blocked, afterwards LBS should continue automaticaly', 3, $log, $ll, false);
+										usleep(1000*1000*(int)$time[1] + 1000*1000*15);
 									}
 								}
 
