@@ -631,7 +631,7 @@ if (isset($_GET['code']))		//	OK bis zum CODE speichern (10 Minuten Zeit für de
 				{
 					echo 'Tokens konnten in Automatikprozess NICHT via getAccessTokenFromAuthorizationCode() abgerufen werden, der Prozess wurde abgebrochen ...'."<br />\n";
 					echo 'Starte den LBS (70er) mit Trigger = 1 innerhalb von 10 Minuten !'."<br />\n";
-					echo 'Tokens ... '.$tokens."<br />\n";
+					echo 'Tokens ... '.(isset($tokens) ? serialize($tokens) : 'not set')."<br />\n";
 				}
 				else
 				{
@@ -768,7 +768,7 @@ if ($E=logic_getInputs($id))
 						{
 							$file = file($klasse, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);  
 ///
-							if (!isset($file))
+							if (!is_array($file) || !isset($file[1]))
 							{
 								logic_setOutput($id, 5, 'no class-content available - class-version cannot be read');
 								LB_LBSID_DEBUG($id, $remark.' CLASS-version ................ cannot be read', 3, $log, $ll, true);
