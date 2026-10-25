@@ -315,7 +315,7 @@ function LB_LBSID($id)
 	}
 }
 
-function LB_LBSID_TRACE($id, $message, $LbsLogLevel, $einLog = 0, $DebugLogLevel, $exit = false)
+function LB_LBSID_TRACE($id, $message, $LbsLogLevel, $einLog, $DebugLogLevel, $exit = false)
 {
 	$a = array('LOG_EMERG_', 'LOG_ALERT_', 'LOG_CRIT__', 'LOG_ERROR_', 'LOG_WARNING', 'LOG_NOTICE', 'LOG_INFO__', 'LOG_DEBUG_');
 	if ($einLog == 1) $logName = logic_getVar($id, 102)."__LBSLBSID__";
@@ -398,7 +398,8 @@ if (isset($_GET['error']))		//	OK
 		echo 'Redirect-Url: '.$url."<br />\n"."<br />\n"."<br />\n";
 	}
 ///
-	if ($_GET['error_description'] == 'login aborted by the user')
+	$error_description = isset($_GET['error_description']) ? $_GET['error_description'] : '';
+	if ($error_description == 'login aborted by the user')
 	{
 		echo 'Home-Connect API ...'."<br />\n";
 		echo '302 >> Found >> access_denied >> login aborted by the user'."<br />\n";
@@ -407,7 +408,7 @@ if (isset($_GET['error']))		//	OK
 		echo 'Du hast die Authorisierung des Clients (Edomi) durch den Owner (Besitzer des Home-Connect Accounts) abgebrochen.'."<br />\n";
 		echo 'Somit konnte der Umfang der Freigabe / des Zugriffs (Scope) nicht verifiziert und freigegeben werden.'."<br />\n";
 	}
-	elseif ($_GET['error_description'] == 'grant operation aborted by the user')
+	elseif ($error_description == 'grant operation aborted by the user')
 	{
 		echo 'Home-Connect API ...'."<br />\n";
 		echo '302 >> Found >> access_denied >> grant operation aborted by the user'."<br />\n";
@@ -416,7 +417,7 @@ if (isset($_GET['error']))		//	OK
 		echo 'Du hast die Authorisierung des Clients (Edomi) durch den Owner (Besitzer des Home-Connect Accounts) nicht abgeschlossen/abgebrochen.'."<br />\n";
 		echo 'Du hast den Umfang der Freigabe / des Zugriffs auf die Daten vorzeitig abgebrochen und nicht beendet (somit den Scope nicht freigegeben)'."<br />\n";
 	}
-	elseif ($_GET['error_description'] == 'missing or invalid request parameters')
+	elseif ($error_description == 'missing or invalid request parameters')
 	{
 		echo 'Home-Connect API ...'."<br />\n";
 		echo '302 >> Found >> invalid_request >> missing or invalid request parameters - Invalid request, response type is missing'."<br />\n";
@@ -428,7 +429,7 @@ if (isset($_GET['error']))		//	OK
 		echo 'response_type is required and must be "CODE" --> response_type=code'."<br />\n";
 		echo 'client_id is required --> client_id={your API-key of your application you created in your developer-account.}'."<br />\n";
 	}
-	elseif ($_GET['error_description'] == 'given response_type not supported')
+	elseif ($error_description == 'given response_type not supported')
 	{
 		echo 'Home-Connect API ...'."<br />\n";
 		echo '302 >> Found >> unsupported_response_type >> given response_type not supported'."<br />\n";
@@ -438,7 +439,7 @@ if (isset($_GET['error']))		//	OK
 		echo 'Die Ursache ist ein falscher Parameter (Arg) in der Authorisierung-URL.'."<br />\n";
 		echo 'response_type is required and must be "CODE" --> response_type=code'."<br />\n";
 	}
-	elseif ($_GET['error_description'] == 'scope doesn\'t match requested scope')
+	elseif ($error_description == 'scope doesn\'t match requested scope')
 	{
 		echo 'Home-Connect API ...'."<br />\n";
 		echo '302 >> Found >> invalid_scope >> scope does not match requested scope'."<br />\n";
@@ -447,7 +448,7 @@ if (isset($_GET['error']))		//	OK
 		echo 'Du konntest die Authorisierung des Clients (Edomi) durch den Owner (Besitzer des Home-Connect Accounts) nicht abschliessen.'."<br />\n";
 		echo 'Die Ursache scheint am falschen SCOPE zu liegen.'."<br />\n";
 	}
-	elseif ($_GET['error_description'] == 'client has limited user list - user not assigned to client')
+	elseif ($error_description == 'client has limited user list - user not assigned to client')
 	{
 		echo 'Home-Connect API ...'."<br />\n";
 		echo '302 >> Found >> unauthorized_client >> client has limited user list - user not assigned to client - Invalid HC account - please check configured test account'."<br />\n";
@@ -466,7 +467,7 @@ if (isset($_GET['error']))		//	OK
 		echo 'Du konntest die Authorisierung des Clients (Edomi) durch den Owner (Besitzer des Home-Connect Accounts) nicht abschliessen.'."<br />\n";
 		echo 'Löse diesen Fehler, befor du in Edomi weiter machst.'."<br />\n";
 		echo 'Error: '.$_GET['error']."<br />\n";
-		echo 'Error-Description: '.$_GET['error_description']."<br />\n";
+		echo 'Error-Description: '.$error_description."<br />\n";
 	}
 	echo "<br />\n";
 	echo 'Um Zugriff auf den Endpoint (Home-Connect-Server) und die Daten des Owners zu erhalten, schliesse vorher die Authorisierung erfolgreich ab.'."<br />\n"."<br />\n";
@@ -1511,7 +1512,7 @@ if ($E=logic_getInputs($id))
 
 
 
-function LB_LBSID_DEBUG($id, $message, $LbsLogLevel, $einLog = 0, $DebugLogLevel, $exit = false)
+function LB_LBSID_DEBUG($id, $message, $LbsLogLevel, $einLog, $DebugLogLevel, $exit = false)
 {
 	$a = array('LOG_EMERG_','LOG_ALERT_','LOG_CRIT__','LOG_ERROR_','LOG_WARNING','LOG_NOTICE','LOG_INFO__','LOG_DEBUG_');
 	if ($einLog == 1) $logName = logic_getVar($id, 102)."__LBSLBSID__";
